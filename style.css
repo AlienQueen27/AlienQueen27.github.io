@@ -1,34 +1,63 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
+:root {
+  --bg: #fefefb;
+  --text: #1e1e1e;
+  --primary: #8bc34a;    /* yeşil */
+  --accent: #558b2f;     /* koyu yeşil */
+  --highlight: #ffb300;  /* sıcak sarı/turuncu vurgular için */
+  --radius: 16px;
+}
+
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
 header {
-  background: #2b3d4f;
-  color: white;
-  padding: 40px 20px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-main {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
-section {
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.section {
   background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 24px;
+  margin-bottom: 32px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  padding-left: 20px;
 }
 
 a {
-  color: #007acc;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -36,10 +65,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.poster, .video {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 12px;
+}
+
 footer {
-  background: #2b3d4f;
-  color: #ccc;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 0.95rem;
+  color: #555;
 }
