@@ -18,28 +18,87 @@
     <section class="section">
       <h2>Team Members</h2>
       <ul>
-        <li><strong>Ege Mert Gülderen</strong> – 21992962</li>
-        <li><strong>Beren Bilgin</strong> – 21992852</li>
-        <li><strong>Supervisor:</strong> Assoc. Prof. Dr. Aydın Kaya</li>
-        <p><strong>Department:</strong> Artificial Intelligence Engineering, Hacettepe University</p>
-        <p><strong>Course:</strong> BBM479-480: Design Project</p>
+        <li><strong>Ege Mert Gülderen</strong> – Student ID: 21992962</li>
+        <li><strong>Beren Bilgin</strong> – Student ID: 21992852</li>
       </ul>
+      <p><strong>Supervised by:</strong><br>
+         Doç. Dr. Aydın Kaya<br>
+         Department: Computer Engineering<br>
+         Course: BBM479-480: Design Project
+      </p>
     </section>
 
     <section class="section">
-      <h2>Summary</h2>
-      <p>This project models how autonomous agents can evolve advantageous traits across generations while learning within their lifetimes. It integrates Evolutionary Algorithms (EAs) and Deep Reinforcement Learning (RL) to simulate complex, adaptive behaviors in a multi-agent ecosystem. The simulation was ported from Unity to Python for performance and scalability, offering a testbed for artificial life and intelligent system studies.</p>
+      <h2>Project Overview</h2>
+      <h3>Adaptive Ecosystem Simulation with Evolutionary AI and Reinforcement Learning</h3>
+      <p>
+        Our project explores the fascinating intersection of artificial life, evolutionary computation, and reinforcement learning by developing an adaptive ecosystem simulation. In this simulation, virtual agents inhabit a dynamic environment and exhibit both intra-lifetime learning and inter-generational evolution.
+      </p>
+      <p>
+        The core objective is to investigate how artificial agents can adapt intelligently within complex environments by leveraging the combined power of Evolutionary Algorithms (EAs) and Reinforcement Learning (RL). Each agent learns to survive, reproduce, and cooperate—or compete—using decision-making capabilities informed by both sensory perception and internal state monitoring.
+      </p>
+      <p>
+        Originally prototyped in Unity, the system was re-engineered in Python using PyTorch to leverage GPU acceleration and scalability. The final platform supports real-time visualization, large population simulations, and detailed performance tracking, serving as a reusable research tool for the AI community.
+      </p>
     </section>
-
+    
+    <section class="section">
+      <h2>Summary</h2>
+      <p>
+        Our research addresses a central question in artificial intelligence and artificial life:
+        <em>Can agents that both evolve and learn outperform those that rely on only one adaptation mechanism?</em>
+      </p>
+      <p>
+        To answer this, we designed an artificial ecosystem populated by autonomous agents. Each agent is equipped with two neural processing units:
+      </p>
+      <ul>
+        <li>A Convolutional Neural Network (CNN) that interprets spatial sensory inputs such as food distribution, hazards, and nearby agents.</li>
+        <li>A Multi-Layer Perceptron (MLP) that processes internal states like health, reproduction status, and social metrics.</li>
+      </ul>
+      <p>
+        These inputs are fused and fed into a Q-learning-based decision module, allowing agents to learn optimal actions such as moving, foraging, fleeing, or reproducing. Across generations, agents undergo selection, crossover, and mutation using a Genetic Algorithm. This dual approach enables them to adapt both over time and in real-time.
+      </p>
+      <p>
+        Our experiments demonstrate that this hybrid learning framework significantly enhances survival, behavioral richness, and resilience to environmental change.
+      </p>
+    </section>
+    
     <section class="section">
       <h2>Key Features</h2>
       <ul>
-        <li>Hybrid Evolutionary AI + RL architecture</li>
-        <li>Dual-stream CNN + MLP sensory system</li>
-        <li>Emergent behaviors like kin cooperation and resource adaptation</li>
-        <li>Real-time simulation visualization</li>
+        <li><strong>Hybrid Learning Architecture:</strong> Combines deep reinforcement learning (DQN) with evolutionary strategies.</li>
+        <li><strong>Dual Neural Processing:</strong> Agents use CNNs for environmental perception and MLPs for internal state awareness.</li>
+        <li><strong>Multi-Agent Ecosystem:</strong> Agents interact, form alliances, compete, reproduce, and evolve across generations.</li>
+        <li><strong>Real-Time Simulation:</strong> Supports real-time visualization, analysis tools, and adjustable simulation parameters.</li>
+        <li><strong>Evaluation Metrics:</strong> Includes tracking for fitness, survival rate, reproduction success, and behavioral complexity.</li>
+        <li><strong>Scalability:</strong> Designed for GPU-accelerated batch evaluations of large agent populations.</li>
+        <li><strong>Research Platform:</strong> Acts as a foundation for future work in artificial life, game AI, and ecological modeling.</li>
       </ul>
     </section>
+    
+    <section class="section">
+      <h2>Technical Highlights</h2>
+      <ul>
+        <li><strong>Language & Frameworks:</strong> Python 3.11, PyTorch, NumPy, Matplotlib</li>
+        <li><strong>Architecture:</strong> CNN for 2D spatial data + MLP for scalar internal state → Combined into a Q-Network</li>
+        <li><strong>Learning Strategy:</strong> Epsilon-greedy Q-Learning (RL) with intergenerational genetic optimization (EA)</li>
+        <li><strong>Environment:</strong> 2D toroidal grid with dynamic resource and hazard generation</li>
+        <li><strong>Metrics Tracked:</strong> Fitness, Q-value convergence, reward stability, trait evolution, kin-based cooperation</li>
+        <li><strong>Hardware:</strong> Simulation performance tested up to 200 agents on consumer-grade hardware</li>
+      </ul>
+    </section>
+    
+    <section class="section">
+      <h2>Applications & Future Directions</h2>
+      <p>This work goes beyond theoretical experimentation and provides real-world applicability in fields such as:</p>
+      <ul>
+        <li><strong>Game AI:</strong> Design of intelligent NPCs with evolving, adaptive behavior in open-world simulations.</li>
+        <li><strong>Educational Tools:</strong> Interactive modules to teach evolution, decision-making, and AI principles in classrooms.</li>
+        <li><strong>Ecological Modeling:</strong> Simulate species dynamics, population competition, and environmental stress scenarios.</li>
+        <li><strong>Multi-Agent Robotics:</strong> Coordination and role-specialization in heterogeneous robot teams under dynamic conditions.</li>
+      </ul>
+    </section>
+
 
     <section class="section">
       <h2>Results and Impact</h2>
