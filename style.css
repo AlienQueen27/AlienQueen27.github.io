@@ -40,10 +40,11 @@ header {
   background: white;
   border-radius: 16px;
   padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-  width: 80px;
+  width: 150px;
   height: auto;
 }
 
